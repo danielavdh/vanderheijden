@@ -13,10 +13,10 @@
   <meta name="author" content="wwwebsites.com" />
   <meta name="copyright" content="Van der Heijden" />
   <title>Van der Heijden</title>
-  <link rel="stylesheet" media="all" href="http://cdn.vanderheijden.uk/assets/application-74fb028d0a199c0aadf2e1e500e807d43600fd3680ee74a2cbf6eac82361fcb4.css" />
-  <script src="http://cdn.vanderheijden.uk/assets/application-2281915dc4de04cef8fe9d66971a088825cc60c274dbc1835f98246ffaaf0254.js"></script>
+  <link rel="stylesheet" media="all" href="http://cdn.vanderheijden.uk/assets/application-0356bc82ccff2b4363b61ac43e716ff7e942f0f6e9438c3d14f4ccd8bcbe999a.css" />
+  <script src="http://cdn.vanderheijden.uk/assets/application-0ee8657cc327498721bf01ee0908fee7f027ef394746581624aaf2f9a9e0d954.js"></script>
   <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="z3ss+1as6ltcW3gQGhXQQe0s68B/FBg8Ea9Entx42+wAnSZyIqEPpDxG97YpyLEiiT5KePCiXbFNJiBKB+Lshg==" />
+<meta name="csrf-token" content="+gUMoicAiCYFut7/qQHTvwKLkyE4NaVKKPLHN9Q3nJi8lV8QIIS1w3IliZuGudqrDitLsplhsbpVxw9YhfXYjg==" />
 </head>
 <body onload="vdh.floaters.start();">
 
@@ -110,7 +110,8 @@ Partner PWC
 			<div id="extras">
 				
 <div id="extras_text">
-	<video controls="controls" src="http://cdn.vanderheijden.uk/assets/markKirby-731a6cab1af7fe393d9261f8f0e946376044713ffca68835bf8d1bb235f36e36.mp4"></video>
+	<video src="http://cdn.vanderheijden.uk/assets/markKirby-c8b69e028978fc3ecb632cb0e69e1a20aa05b6262c480155fe03ffaa3d862e2f.mp4"></video>
+	<div id="playBtn"></div>
 </div>
 
 
@@ -126,6 +127,10 @@ Partner PWC
 
 	<script>
 		vdh.getWindowDimensions();
+		vdh.video = document.querySelector("video");
+		if(vdh.video != null){
+			vdh.videoClickListener();
+		}
 	</script>
 </body>
 </html>

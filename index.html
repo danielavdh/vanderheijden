@@ -13,10 +13,10 @@
   <meta name="author" content="wwwebsites.com" />
   <meta name="copyright" content="Van der Heijden" />
   <title>Van der Heijden</title>
-  <link rel="stylesheet" media="all" href="http://cdn.vanderheijden.uk/assets/application-74fb028d0a199c0aadf2e1e500e807d43600fd3680ee74a2cbf6eac82361fcb4.css" />
-  <script src="http://cdn.vanderheijden.uk/assets/application-2281915dc4de04cef8fe9d66971a088825cc60c274dbc1835f98246ffaaf0254.js"></script>
+  <link rel="stylesheet" media="all" href="http://cdn.vanderheijden.uk/assets/application-0356bc82ccff2b4363b61ac43e716ff7e942f0f6e9438c3d14f4ccd8bcbe999a.css" />
+  <script src="http://cdn.vanderheijden.uk/assets/application-0ee8657cc327498721bf01ee0908fee7f027ef394746581624aaf2f9a9e0d954.js"></script>
   <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="p+L8eLYo1TkIqAdpq6tprcuiG/tWr6gHV3nUH6+EvqFoBPbxwiUwxmi1iM+YdgjOr7C6Q9kZ7YoL8LDLdB6Jyw==" />
+<meta name="csrf-token" content="4L6jXZ5IaxLFB6200j7bu9/IMlAJnCmOB0C78xs0xvmmLvDvmcxW97KY+tD9htKv02jqw6jIPX56dXOcSvaC7w==" />
 </head>
 <body onload="vdh.floaters.start();">
 
@@ -114,6 +114,10 @@ Teams develop more trust and understanding about what makes colleagues tick and 
 
 	<script>
 		vdh.getWindowDimensions();
+		vdh.video = document.querySelector("video");
+		if(vdh.video != null){
+			vdh.videoClickListener();
+		}
 	</script>
 </body>
 </html>

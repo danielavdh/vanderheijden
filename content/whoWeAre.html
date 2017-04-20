@@ -13,10 +13,10 @@
   <meta name="author" content="wwwebsites.com" />
   <meta name="copyright" content="Van der Heijden" />
   <title>Van der Heijden</title>
-  <link rel="stylesheet" media="all" href="http://cdn.vanderheijden.uk/assets/application-74fb028d0a199c0aadf2e1e500e807d43600fd3680ee74a2cbf6eac82361fcb4.css" />
-  <script src="http://cdn.vanderheijden.uk/assets/application-2281915dc4de04cef8fe9d66971a088825cc60c274dbc1835f98246ffaaf0254.js"></script>
+  <link rel="stylesheet" media="all" href="http://cdn.vanderheijden.uk/assets/application-0356bc82ccff2b4363b61ac43e716ff7e942f0f6e9438c3d14f4ccd8bcbe999a.css" />
+  <script src="http://cdn.vanderheijden.uk/assets/application-0ee8657cc327498721bf01ee0908fee7f027ef394746581624aaf2f9a9e0d954.js"></script>
   <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="/T5z9Rygg5Oat0bUXeGIoTJmFVa72hGHOyJ+M1RcD5Yy2Hl8aK1mbPqqyXJuPOnCVnS07jRsVApnqxrnj8Y4/A==" />
+<meta name="csrf-token" content="iJoc1qK3kn7x6QEXrUiTSY62JH16X7zQtW82owo+CerOCk9kpTOvm4Z2VnOC8Jpdghb87tsLqCDIWv7MW/xN/A==" />
 </head>
 <body onload="vdh.floaters.start();">
 
@@ -116,6 +116,10 @@ Daniela is the mother of three daughters, born 1976, 1978 and 1997 and has five 
 
 	<script>
 		vdh.getWindowDimensions();
+		vdh.video = document.querySelector("video");
+		if(vdh.video != null){
+			vdh.videoClickListener();
+		}
 	</script>
 </body>
 </html>

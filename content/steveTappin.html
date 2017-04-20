@@ -13,10 +13,10 @@
   <meta name="author" content="wwwebsites.com" />
   <meta name="copyright" content="Van der Heijden" />
   <title>Van der Heijden</title>
-  <link rel="stylesheet" media="all" href="http://cdn.vanderheijden.uk/assets/application-74fb028d0a199c0aadf2e1e500e807d43600fd3680ee74a2cbf6eac82361fcb4.css" />
-  <script src="http://cdn.vanderheijden.uk/assets/application-2281915dc4de04cef8fe9d66971a088825cc60c274dbc1835f98246ffaaf0254.js"></script>
+  <link rel="stylesheet" media="all" href="http://cdn.vanderheijden.uk/assets/application-0356bc82ccff2b4363b61ac43e716ff7e942f0f6e9438c3d14f4ccd8bcbe999a.css" />
+  <script src="http://cdn.vanderheijden.uk/assets/application-0ee8657cc327498721bf01ee0908fee7f027ef394746581624aaf2f9a9e0d954.js"></script>
   <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="atVpOteUKlXZmSDjbpvpxbFp0EJZ8cp5l378BIRJFDOlM2Ozo5nPqrmEr0VdRoim1Xtx+tZHj/TL95jQX9MjWQ==" />
+<meta name="csrf-token" content="bGP4Qm9hlEwm0+cW8bmzNhot8Qvgj1d8mQgPOjJ9iF0q86vwaOWpqVFMsHLeAboiFo0pmEHbQ4zkPcdVY7/MSw==" />
 </head>
 <body onload="vdh.floaters.start();">
 
@@ -78,11 +78,7 @@
 			</div>
     	
 			<div id="content" class="steveTappin">
-				<script type="text/javascript">
-	vdh.movies.videovars.fileName = "movies/steveTappin.m4v";
-</script>
-
-<ul class="client_videos">
+				<ul class="client_videos">
 	<li>
 		<a href="/content/markKirby">
 			Mark Kirby, Chairman
@@ -103,11 +99,9 @@
     	
 			<div id="extras">
 				
-<div id="extras_text"
-	 onmouseover="vdh.movies.mediaPlayer.showStopBtn();"
-	 onmouseout="vdh.movies.mediaPlayer.hideStopBtn();">
-	<div id="mediaPlayerSWF">
-	</div>
+<div id="extras_text">
+	<video src="http://cdn.vanderheijden.uk/assets/steveTappin-cc22aad8717e67f842511332619a829edd8e121f269dc7a8629d910afeb37c9a.mp4"></video>
+	<div id="playBtn"></div>
 </div>
 
 
@@ -123,6 +117,10 @@
 
 	<script>
 		vdh.getWindowDimensions();
+		vdh.video = document.querySelector("video");
+		if(vdh.video != null){
+			vdh.videoClickListener();
+		}
 	</script>
 </body>
 </html>
